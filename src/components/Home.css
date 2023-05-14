@@ -1,0 +1,27 @@
+.home {
+    width: 97.7vw;
+    margin: auto;
+}
+.home_bg {
+    width: 100vw;
+    background-color: #E3E6E6;
+}
+.home_imageDiv {
+    height: 100vh;
+}
+.home_image {
+    width: 100%;
+    mask-image: linear-gradient(to bottom,rgb(255, 0, 0) 50% ,rgba(0,0,0,0));
+}
+.carousel {
+    margin-bottom: -29rem;
+}
+
+.home_row {
+    display: flex;
+    gap: 1rem;
+    z-index: 10;
+    position: relative;
+    margin: auto;
+    width: 95vw;
+}
