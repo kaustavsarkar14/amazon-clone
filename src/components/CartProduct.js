@@ -14,7 +14,9 @@ export default function CartProduct({ id, title, price, rating, image }) {
 
     return (
         <div className="checkoutProduct">
+            <div className="checkoutProduct_imageDiv">
             <img className='checkoutProduct_image' src={image} alt="" />
+            </div>
             <div className="checkoutProduct_info">
                 <p className='checkoutProduct_title' >{title}</p>
                 <p className="checkoutProduct_price">

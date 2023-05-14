@@ -10,12 +10,18 @@
 .checkoutProduct_rating {
     display: flex;
 }
+.checkoutProduct_imageDiv {
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem 1rem;
+}
 .checkoutProduct_image {
-    height: 15rem;
+    height: 10rem;
+    width: 10rem;
     object-fit: contain;
 }
 .checkoutProduct_title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .checkoutProduct_info > button  {
