@@ -66,3 +66,37 @@
 .login > button:active {
     background-color: rgba(0, 0, 0, 0.103);
 }
+.Link {
+    color: black;
+    border-radius: 2px;
+    height: 2rem;
+    border: 1px solid;
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 26rem;
+}
+.Link:active {
+    background-color: rgba(0, 0, 0, 0.139);
+}
+
+@media only screen and (max-width: 600px) {
+    .login {
+        background-color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Link {
+        color: black;
+        border-radius: 2px;
+        height: 2rem;
+        border: 1px solid;
+        margin-top: 1rem;
+        cursor: pointer;
+        width: 16rem;
+    }
+    .logIn_box {
+        width: 70vw;
+    }
+  }

@@ -35,7 +35,7 @@ export default function Login() {
 
             <p>New to Amazon?</p>
 
-            <Link to='/signup'><button>Create your Amazon account</button></Link>
+            <Link  to='/signup'><button className='Link' >Create your Amazon account</button></Link>
         </div>
     )
 }
