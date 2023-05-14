@@ -7,6 +7,7 @@ import Login from './components/Login';
 import { useEffect } from 'react';
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
+import Signup from './components/Signup';
 
 function App() {
   const [{ user }, dispatch] = useStateValue()
@@ -39,6 +40,7 @@ console.log("the user is ",user)
         <Routes>
           <Route path="/checkout" element={<><Header /><Checkout /></>} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup/>} />
           <Route path="/" element={<><Header /><Home /></>} />
 
         </Routes>

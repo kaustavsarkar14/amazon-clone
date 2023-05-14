@@ -14,7 +14,7 @@ export default function Header() {
             auth.signOut()
         }
     }
-
+    console.log(user)
     return (
         <div className='header' >
             <Link to="/" >
@@ -28,7 +28,7 @@ export default function Header() {
             <div className="header_nav">
                 <Link to={!user && "/login"} className="header_link">
                     <div className="header_option">
-                        <span className='header_optionLineOne' >Hello, {user? user.email:"Sign in" }</span>
+                        <span className='header_optionLineOne' >Hello, {user? localStorage.getItem('name').split(" ")[0]:"Sign in" }</span>
                         <span className='header_optionLineTwo' onClick={signOut} >{user? "Sign out": "Accounts and Lists"}</span>
                     </div>
                 </Link>

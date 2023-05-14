@@ -15,7 +15,6 @@ export default function Login() {
         })
         .catch((err)=>alert(err.message))
     }
-    
 
     return (
         <div className='login' >
@@ -36,7 +35,7 @@ export default function Login() {
 
             <p>New to Amazon?</p>
 
-            <button>Create your Amazon account</button>
+            <Link to='/signup'><button>Create your Amazon account</button></Link>
         </div>
     )
 }
