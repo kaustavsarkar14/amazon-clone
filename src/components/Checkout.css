@@ -13,3 +13,19 @@
 .checkout_left {
     flex: 1;
 }
+.checkout_empty {
+    width: 80vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+}
+.checkout_empty > h2 {
+    font-weight: 500;
+}
+.Link {
+    text-decoration: none;
+    color: rgb(7, 101, 163);
+}

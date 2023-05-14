@@ -8,12 +8,18 @@ export default function Home() {
     return (
         <div className="home_bg">
             <div className="home">
-                <Carousel className='carousel' showIndicators={false} showStatus={false} showThumbs={false} >
+                <Carousel className='carousel' emulateTouch={true} infiniteLoop={true} transitionTime={3} autoPlay={true}  showIndicators={false} showStatus={false} showThumbs={false} >
                     <div className="home_imageDiv">
                         <img className='home_image' src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/BAU2023/ATFGW/Mothers_day_3000x1200_Unrec._CB590261646_.jpg" />
                     </div>
                     <div className="home_imageDiv">
                         <img className='home_image' src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/MAYGTM2022/2023/D11_HeroPC_3000x1200_rev._CB589422742_.jpg" />
+                    </div>
+                    <div className="home_imageDiv">
+                        <img className='home_image' src="https://m.media-amazon.com/images/I/71FdkjqVLyL._SX3000_.jpg" />
+                    </div>
+                    <div className="home_imageDiv">
+                        <img className='home_image' src="https://m.media-amazon.com/images/I/71Vipccc6FL._SX3000_.jpg" />
                     </div>
                 </Carousel>
 
@@ -66,6 +72,30 @@ export default function Home() {
                         rating={4}
                         image="https://m.media-amazon.com/images/I/61mzM7JeQ2L._SY450_.jpg"
                     />
+                </div>
+                <div className="home_row">
+                    <Product
+                        id="125"
+                        title="RBD Machine 75CC Powerful Woodcutting Saw for Farm, 2 Stroke Handed Petrol Chain Saw, Garden and Ranch with Tool Kit"
+                        price={115}
+                        rating={3}
+                        image="https://m.media-amazon.com/images/I/61ZvUqp1m2L._SX522_.jpg"
+                    />
+                    <Product
+                        id="126"
+                        title='Fastrack New Limitless FS1 Smart Watch|Biggest 1.95" Horizon Curve Display|SingleSync BT Calling v5.3|Built-in Alexa|Upto 5 Day Battery|ATS Chipset with Zero Lag|100+ Sports Modes|150+ Watchfaces'
+                        price={30}
+                        rating={4}
+                        image="https://m.media-amazon.com/images/I/71KpoPUzJ2L._UX679_.jpg"
+                    />
+                    <Product
+                        id="127"
+                        title="Journey to the Moon : An incredible adventure story."
+                        price={690}
+                        rating={5}
+                        image="https://cdn.discordapp.com/attachments/750764661980397598/1107348260261208104/dc.jpg"
+                    />
+
                 </div>
             </div>
         </div>

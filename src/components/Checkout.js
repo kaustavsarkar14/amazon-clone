@@ -3,6 +3,7 @@ import { useStateValue } from '../StateProvider'
 import CartProduct from './CartProduct';
 import "./Checkout.css"
 import Subtotal from './Subtotal';
+import { Link } from 'react-router-dom';
 
 export default function Checkout() {
     const [{ basket }, dispatch] = useStateValue();
@@ -10,7 +11,10 @@ export default function Checkout() {
         <div>
             {
                 basket?.length === 0 ? (
-                    <h1>Your cart is empty</h1>
+                    <div className="checkout_empty">
+                        <h2>Your Amazon cart is empty</h2>
+                        <p>Check your Saved for later items below or <Link className='Link' to="/">continue shopping</Link>.</p>
+                    </div>
                 ) : (
                     <div className='checkout' >
                         <div className="checkout_left">
@@ -28,7 +32,7 @@ export default function Checkout() {
                         </div>
 
                         <div className="checkout_right">
-                            <Subtotal/>
+                            <Subtotal />
                         </div>
 
                     </div>

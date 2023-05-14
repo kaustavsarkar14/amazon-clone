@@ -39,4 +39,8 @@
     flex: 1;
     min-width: 5rem;
     max-width: 14rem;
+    cursor: pointer;
+}
+.product_button:active {
+    background-color: #e2b748;
 }
