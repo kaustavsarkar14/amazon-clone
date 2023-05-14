@@ -17,8 +17,6 @@ export default function Signup() {
             navigate("/login")
             )
             .catch((err)=>console.log(err.message))
-            
-            localStorage.setItem('name',name)
     }
    
 
