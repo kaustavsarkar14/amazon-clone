@@ -7,12 +7,15 @@ export const initialState = {
         image: "https://m.media-amazon.com/images/I/31VjlrbE3bL._SY445_SX342_QL70_FMwebp_.jpg"
     }, {
         id: "12324",
-        title: "Nike Air Max Torch 3 Men s Running Shoes",
+        title: "Nike Air Max Torch 3 Men s Running Shoes llll",
         price: 16548,
         rating: 3,
         image: "https://m.media-amazon.com/images/I/71wbXtpEwQL._UY675_.jpg"
     }]
 }
+
+export const getBasketTotal = (basket) =>
+    basket?.reduce((amount, item)=>item.price + amount, 0)
 
 const reducer = (state, action) => {
     console.log(action)

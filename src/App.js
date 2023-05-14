@@ -3,6 +3,8 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Checkout from './components/Checkout';
+import Login from './components/Login';
+import "./Login.css"
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
         
         <Routes>
           <Route path="/checkout" element={<><Header/><Checkout/></>} />
-          <Route path="/login" element={<h1>Login</h1>} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/" element={<><Header/><Home/></>} />
           
         </Routes>

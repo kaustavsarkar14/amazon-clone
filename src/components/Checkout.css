@@ -1,0 +1,15 @@
+.checkout {
+    width: 98vw;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.checkout_right {
+    margin-left: 1rem;
+    max-height: 10rem;
+    /* background-color: white; */
+}
+.checkout_left {
+    flex: 1;
+}
